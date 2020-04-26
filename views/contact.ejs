@@ -1,0 +1,32 @@
+<%- include('./layout/header') %>
+
+
+<div style="padding-top: 200px; padding-bottom: 100px;" class="container">
+    <div class="row">
+        <div class="col-12">
+        <form method="POST" action="/contact">
+
+           
+            <div class="form-group row">
+                <label >Name</label>
+                <input type="text" name="name" class="form-control">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group row">
+              <label>Email address</label>
+              <input type="email" name="email" class="form-control">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group row">
+              <label >Message</label>
+              <textarea class="form-control" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include('./layout/footer') %>
